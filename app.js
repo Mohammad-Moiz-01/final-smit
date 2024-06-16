@@ -9,12 +9,12 @@ const port = process.env.PORT || 3000;
 // Use body-parser middleware
 app.use(bodyParser.json());
 
-// Nodemailer transporter setup (replace with your actual transporter configuration)
+// Nodemailer transporter setup
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'mohammedmoiz2006@gmail.com',
-    pass: 'cuhy aapo fbir ekxb'
+    pass: 'YOUR_APP_PASSWORD' // Replace with your actual app password
   }
 });
 
