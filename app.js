@@ -21,7 +21,7 @@ const transporter = nodemailer.createTransport({
 // Async function to send email
 async function sendConfirmationEmail(userChoices) {
   const mailOptions = {
-    from: 'your-email@gmail.com',
+    from: 'mohammedmoiz2006@gmail.com',
     to: userChoices.email, // Recipient's email
     subject: 'Cow Purchase Confirmation',
     text: `
