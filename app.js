@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const { WebhookClient } = require('dialogflow-fulfillment');
 
 const app = express();
-const port = process.env.PORT || 3000;
+// const port = process.env.PORT || 3000;
 
 // Use body-parser middleware
 app.use(bodyParser.json());
@@ -72,6 +72,6 @@ app.post('/webhook', (req, res) => {
 });
 
 // Start the server
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Server is running on port: ${port}`);
+// });
