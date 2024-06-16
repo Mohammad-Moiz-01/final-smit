@@ -47,7 +47,7 @@ async function sendConfirmationEmail(userChoices) {
 }
 
 // Endpoint to handle Dialogflow webhook requests
-app.post('/api/webhook', (req, res) => {
+app.post('/webhook', (req, res) => {
   const agent = new WebhookClient({ request: req, response: res });
 
   function cowPurchaseHandler(agent) {
