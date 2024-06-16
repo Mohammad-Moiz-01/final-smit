@@ -1,9 +1,13 @@
 {
     "version": 2,
     "builds": [
-      { "src": "index.js", "use": "@vercel/node" }
+      { "src": "index.js", "use": "@vercel/nodemailer" },
+      { "src": "package-lock.json", "use": "@vercel/nodemailer" },
+      { "src": "package.json", "use": "@vercel/nodemailer" }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/index.js" }
+      { "src": "/(.*)", "dest": "/index.js" },
+      { "src": "/(.*)", "dest": "/package-lock.js" },
+      { "src": "/(.*)", "dest": "/package.js" }
     ]
   }
